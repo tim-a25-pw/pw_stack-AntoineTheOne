@@ -1,5 +1,6 @@
 .header {
     --header-height: 100px;
+    font-weight: 600;
 
     .wrapper {
         align-items: center;
@@ -34,11 +35,15 @@
 }
 
 .header__brand {
-    max-width: 200px;
     position: relative;
+    font-weight: 900;
+    font-size: typo(40px);
     z-index: 10;
+    font-family: var(--font-primary);
+    color: #444444;
     svg {
         color: var(--color-primary);
+        margin-right: 20px;
     }
 }
 
@@ -150,6 +155,8 @@
         a {
             display: block;
             text-align: center;
+            text-transform: uppercase;
+            font-size: typo(14px);
         }
     }
 

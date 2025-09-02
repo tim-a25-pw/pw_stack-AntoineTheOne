@@ -14,13 +14,13 @@ h6 {
 }
 
 h1 {
-    font-size: var(--font-size-h1);
+    font-size: typo(100px);
     margin-top: 0;
     color: var(--color-primary);
 }
 
 h2 {
-    font-size: var(--font-size-h2);
+    font-size: typo(50px);
     font-family: var(--font-secondary);
     color: var(--color-black);
 }

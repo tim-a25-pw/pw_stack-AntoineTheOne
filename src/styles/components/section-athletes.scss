@@ -1,0 +1,12 @@
+.athletes .cards {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+
+    @media screen and (max-width: $breakpoint-ml) {
+        grid-template-columns: 4fr 4fr;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        grid-template-columns: 4fr;
+    }
+}

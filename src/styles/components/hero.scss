@@ -1,17 +1,56 @@
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.hero {
     position: relative;
+    width: 100vw;
+    height: 100vh;
 }
 
-.hero .content {
+.hero__media {
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
+    left: 0;
+
+    z-index: -1;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: right;
+    }
+}
+.hero__content {
+    height: 100vh;
+    position: absolute;
+    top: 165px;
+
+    h1 {
+        font-size: typo(50px, 100px);
+        font-weight: 300;
+        margin: 0;
+        span {
+            font-weight: 600;
+        }
+    }
+
     p {
         color: var(--color-white);
+        max-width: 540px;
+        font-size: typo(16px, 18px);
+
+        @media screen and (max-width: $breakpoint-sm) {
+            max-width: 300px;
+        }
     }
     .button {
         color: var(--color-primary);
+        border: solid var(--color-primary) 5px;
+        font-size: typo(16px);
+        font-family: var(--font-primary);
+        font-weight: 900;
+        text-transform: uppercase;
+        padding: 10px 30px;
+        border-radius: 30px;
     }
 }
