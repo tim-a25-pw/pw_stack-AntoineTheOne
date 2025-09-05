@@ -14,8 +14,12 @@ h6 {
 }
 
 h1 {
-    font-size: typo(100px);
-    margin-top: 0;
+    font-size: typo(50px, 100px);
+    font-weight: 300;
+    margin: 0;
+    span {
+        font-weight: 600;
+    }
     color: var(--color-primary);
 }
 
@@ -27,9 +31,9 @@ h2 {
 }
 
 h3 {
-    font-size: var(--font-size-h3);
+    font-size: typo(35px);
     margin-bottom: 5px;
-    text-transform: uppercase;
+    font-family: var(--font-primary);
 }
 
 h4 {

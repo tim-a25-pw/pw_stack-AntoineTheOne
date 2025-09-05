@@ -8,8 +8,7 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: var(--color-primary);
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     &.disabled {

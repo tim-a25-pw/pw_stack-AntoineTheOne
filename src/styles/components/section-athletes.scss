@@ -1,6 +1,7 @@
 .athletes .cards {
     display: grid;
     grid-template-columns: 4fr 4fr 4fr;
+    gap: 30px;
 
     @media screen and (max-width: $breakpoint-ml) {
         grid-template-columns: 4fr 4fr;
@@ -20,5 +21,38 @@
     p {
         font-size: typo(16px, 18px);
         max-width: 730px;
+    }
+}
+
+.card {
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+.athletes .card__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between; /* nom à gauche, icône à droite */
+    align-items: flex-end; /* aligne en bas verticalement */
+    padding: 20px;
+    color: white;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.5); // Fond noir transparent
+    }
+
+    .icon {
+        font-size: 50px;
     }
 }
