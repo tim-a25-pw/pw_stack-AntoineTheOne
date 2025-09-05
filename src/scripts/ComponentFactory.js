@@ -1,9 +1,11 @@
 import Header from './components/Header.js';
+import Caroussel from './components/Caroussel.js';
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
     this.componentList = {
       Header,
+      Caroussel,
     };
     this.init();
   }

@@ -43,13 +43,13 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
-    justify-content: space-between; /* nom à gauche, icône à droite */
-    align-items: flex-end; /* aligne en bas verticalement */
+    justify-content: space-between;
+    align-items: flex-end;
     padding: 20px;
     color: white;
 
     &:hover {
-        background-color: rgba(0, 0, 0, 0.5); // Fond noir transparent
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     .icon {
